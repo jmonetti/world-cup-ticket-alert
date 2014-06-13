@@ -3,10 +3,10 @@ import json
 import sched, time
 import smtplib
 
-# Function to send email alert if tickets are found
+# Function to send email alert from Gmail if tickets are found
 def send_email():   
-    to = 'from_email'
-    gmail_user = 'sender_email'
+    to = 'to_email'
+    gmail_user = 'from_email'
     gmail_pwd = 'gmail_password'
     smtpserver = smtplib.SMTP("smtp.gmail.com",587)
     smtpserver.ehlo()
